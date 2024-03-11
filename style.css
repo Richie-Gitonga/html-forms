@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+select {
+  outline: none;
+  border: none;
+}
+
+.active {
+  display: block;
+}
+
+body {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-image: url(images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font: 16px "Roboto Mono", monospace;
+}
+
+form {
+  width: 60%;
+  padding: 50px;
+  margin: 100px auto;
+  border: 2px solid lightblue;
+  background-color: rgba(212, 212, 212, 0.6);
+}
+
+form input,
+select {
+  width: 100%;
+  display: block;
+  margin: 0 1.2rem 0 0;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+}
+
+form input:focus,
+select:focus {
+  border: 2px solid darkslategrey;
+}
+
+form label {
+  margin: 0.5rem 0;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+form .form-input span {
+  color: red;
+  font-size: 0.8rem;
+  display: none;
+}
+
+input[type="button"] {
+  width: fit-content;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+  transition: all 0.3s ease;
+}
+
+form .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+form .register-btn:hover {
+  background-color: #00ab41;
+}
+
+form .cancel-btn:hover {
+  background-color: #dc3534;
+}
